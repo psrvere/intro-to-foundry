@@ -1,5 +1,7 @@
 # Introduction to Foundry
 
+These are my notes on how to use Foundry - Development Framework for Solidity Apps
+
 - It is written in rust and claims to be very fast
 - `Forge`: Ethereum testing framework. `Cast`: swiss army knife for interacting with smart contracts. `Anvil`: local ethereum node.
 - setup instructions
