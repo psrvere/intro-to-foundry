@@ -25,4 +25,10 @@ These are my notes on how to use Foundry - Development Framework for Solidity Ap
   - create hardhat empty config file `npx hardhat`
   - run hardhat node `npx hardhat node`
   - deploy contract on local node `forge create StakeContract --private-key 0x...`. The private key is taken from the hardhat node we ran just above
-- read foundry book and foundry starter kit for more details!
+
+- Creating Users/Wallets
+- you can use utils to create users (wallets) using `address payable[] users = utils.createUsers(5)`
+- using vm library of Forge you can label users `vm.label(alice, "Alice")` where `address payable alice = users[0]`
+- use `vm.prank(address)` to se set address as `msg.sender` for the next call
+
+- read foundry book and use foundry starter kit for more details!
